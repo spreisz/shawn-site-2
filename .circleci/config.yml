@@ -242,8 +242,8 @@ workflows:
       - build_php
      - deploy_to_pantheon:
          requires:
-#            - static_tests
             - build_php
+#            - static_tests
 #      - visual_regression_test:
 #          requires:
 #            - configure_env_vars
