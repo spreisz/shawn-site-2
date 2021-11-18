@@ -124,16 +124,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.9.0",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
                 "shasum": ""
             },
             "require": {
@@ -144,17 +144,18 @@
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.6.* || 2.0.*@dev",
-                "composer/semver": "1.0.* || 2.0.*@dev",
-                "phpunit/phpunit": "^4.8.36",
-                "sebastian/comparator": "^1.2.4",
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
                 "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "autoload": {
@@ -192,6 +193,7 @@
                 "Porto",
                 "RadPHP",
                 "SMF",
+                "Starbug",
                 "Thelia",
                 "Whmcs",
                 "WolfCMS",
@@ -225,13 +227,16 @@
                 "majima",
                 "mako",
                 "mediawiki",
+                "miaoxing",
                 "modulework",
                 "modx",
                 "moodle",
                 "osclass",
+                "pantheon",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "processwire",
                 "puppet",
                 "pxcms",
                 "reindex",
@@ -241,6 +246,7 @@
                 "sydes",
                 "sylius",
                 "symfony",
+                "tastyigniter",
                 "typo3",
                 "wordpress",
                 "yawik",
@@ -253,11 +259,15 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-07T06:57:05+00:00"
+            "time": "2021-09-13T08:19:44+00:00"
         },
         {
             "name": "composer/semver",
@@ -539,16 +549,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf"
+                "reference": "9888dcc74993c030b75f3dd548bb5e20cdbd740c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/ae02121445ad75f4eaff800cc532b5e6233e2ddf",
-                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/9888dcc74993c030b75f3dd548bb5e20cdbd740c",
+                "reference": "9888dcc74993c030b75f3dd548bb5e20cdbd740c",
                 "shasum": ""
             },
             "require": {
@@ -579,7 +589,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2020-09-30T17:56:20+00:00"
+            "time": "2021-06-08T15:12:46+00:00"
         },
         {
             "name": "dflydev/dot-access-configuration",
@@ -751,39 +761,6 @@
                 "resolver"
             ],
             "time": "2012-10-28T21:08:28+00:00"
-        },
-        {
-            "name": "dnoegel/php-xdg-base-dir",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
-                "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~7.0|~6.0|~5.0|~4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "XdgBaseDir\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "implementation of xdg base directory specification for php",
-            "time": "2019-12-04T15:06:13+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1539,16 +1516,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.11",
+            "version": "8.9.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "8fc1d510b8fcff90e2f3a7c96a893ba16bbdc62d"
+                "reference": "39e2e1c32498338921923af66a90cb4a23a5b389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/8fc1d510b8fcff90e2f3a7c96a893ba16bbdc62d",
-                "reference": "8fc1d510b8fcff90e2f3a7c96a893ba16bbdc62d",
+                "url": "https://api.github.com/repos/drupal/core/zipball/39e2e1c32498338921923af66a90cb4a23a5b389",
+                "reference": "39e2e1c32498338921923af66a90cb4a23a5b389",
                 "shasum": ""
             },
             "require": {
@@ -1575,7 +1552,7 @@
                 "laminas/laminas-diactoros": "^1.8",
                 "laminas/laminas-feed": "^2.12",
                 "masterminds/html5": "^2.1",
-                "pear/archive_tar": "^1.4.11",
+                "pear/archive_tar": "^1.4.14",
                 "php": "^7.0.8",
                 "psr/log": "^1.0",
                 "stack/builder": "^1.0",
@@ -1766,11 +1743,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-12-03T20:57:10+00:00"
+            "time": "2021-11-17T21:24:28+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.9.11",
+            "version": "8.9.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1817,16 +1794,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.9.11",
+            "version": "8.9.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "c8e6bfedd8fcec50ddc9e96e0f5f3d0779e3accb"
+                "reference": "49b9abf15bf4b82c5b47692e39770f2f3a76eaf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c8e6bfedd8fcec50ddc9e96e0f5f3d0779e3accb",
-                "reference": "c8e6bfedd8fcec50ddc9e96e0f5f3d0779e3accb",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/49b9abf15bf4b82c5b47692e39770f2f3a76eaf1",
+                "reference": "49b9abf15bf4b82c5b47692e39770f2f3a76eaf1",
                 "shasum": ""
             },
             "require": {
@@ -1838,7 +1815,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.9.11",
+                "drupal/core": "8.9.20",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.17",
                 "guzzlehttp/guzzle": "6.5.4",
@@ -1851,7 +1828,7 @@
                 "laminas/laminas-zendframework-bridge": "1.0.4",
                 "masterminds/html5": "2.3.0",
                 "paragonie/random_compat": "v9.99.99",
-                "pear/archive_tar": "1.4.11",
+                "pear/archive_tar": "1.4.14",
                 "pear/console_getopt": "v1.4.3",
                 "pear/pear-core-minimal": "v1.10.10",
                 "pear/pear_exception": "v1.0.1",
@@ -1895,7 +1872,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2020-12-03T20:57:10+00:00"
+            "time": "2021-11-17T21:24:28+00:00"
         },
         {
             "name": "drupal/drupal-driver",
@@ -2050,16 +2027,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "8.4.5",
+            "version": "8.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "29ab4fc41e6b516abc34b8dc477b3039fb5c0e96"
+                "reference": "b377b1896e344085d06bdbf671a465950a164d1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/29ab4fc41e6b516abc34b8dc477b3039fb5c0e96",
-                "reference": "29ab4fc41e6b516abc34b8dc477b3039fb5c0e96",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/b377b1896e344085d06bdbf671a465950a164d1e",
+                "reference": "b377b1896e344085d06bdbf671a465950a164d1e",
                 "shasum": ""
             },
             "require": {
@@ -2166,7 +2143,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-01T00:23:28+00:00"
+            "time": "2021-03-22T15:27:55+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2843,16 +2820,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.3",
+            "version": "v4.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984"
+                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984",
-                "reference": "dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/63a79e8daa781cac14e5195e63ed8ae231dd10fd",
+                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd",
                 "shasum": ""
             },
             "require": {
@@ -2891,24 +2868,24 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-12-03T17:45:45+00:00"
+            "time": "2021-11-03T20:52:16+00:00"
         },
         {
             "name": "pantheon-systems/drupal-integrations",
-            "version": "8.0.3",
+            "version": "8.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/drupal-integrations.git",
-                "reference": "0d352e1167a5b3575d886128c8f1fa796603ed9b"
+                "reference": "1645cd1758da6824cf085704bf612b44241556be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/drupal-integrations/zipball/0d352e1167a5b3575d886128c8f1fa796603ed9b",
-                "reference": "0d352e1167a5b3575d886128c8f1fa796603ed9b",
+                "url": "https://api.github.com/repos/pantheon-systems/drupal-integrations/zipball/1645cd1758da6824cf085704bf612b44241556be",
+                "reference": "1645cd1758da6824cf085704bf612b44241556be",
                 "shasum": ""
             },
             "conflict": {
-                "drupal/core": "<8.5"
+                "drupal/core": "<8.5 || >=9"
             },
             "type": "project",
             "extra": {
@@ -2923,6 +2900,11 @@
                             "overwrite": false
                         }
                     }
+                },
+                "patches": {
+                    "drupal/core": {
+                        "Correct reporting of MariaDB version": "https://www.drupal.org/files/issues/2021-05-18/3213482-9.patch"
+                    }
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2930,7 +2912,7 @@
                 "MIT"
             ],
             "description": "Add this project to any Drupal distribution based on drupal/core-composer-scaffold to enable it for use on Pantheon.",
-            "time": "2020-03-11T18:20:13+00:00"
+            "time": "2021-05-18T18:41:52+00:00"
         },
         {
             "name": "pantheon-systems/quicksilver-pushback",
@@ -3004,16 +2986,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.11",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d"
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/17d355cb7d3c4ff08e5729f29cd7660145208d9d",
-                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/4d761c5334c790e45ef3245f0864b8955c562caa",
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa",
                 "shasum": ""
             },
             "require": {
@@ -3066,7 +3048,17 @@
                 "archive",
                 "tar"
             ],
-            "time": "2020-11-19T22:10:24+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-07-20T13:53:39+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -3417,20 +3409,19 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.5",
+            "version": "v0.10.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956"
+                "reference": "01281336c4ae557fe4a994544f30d3a1bc204375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7c710551d4a2653afa259c544508dc18a9098956",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/01281336c4ae557fe4a994544f30d3a1bc204375",
+                "reference": "01281336c4ae557fe4a994544f30d3a1bc204375",
                 "shasum": ""
             },
             "require": {
-                "dnoegel/php-xdg-base-dir": "0.1.*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
                 "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
@@ -3455,7 +3446,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -3485,7 +3476,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2020-12-04T02:51:30+00:00"
+            "time": "2021-10-10T13:37:39+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -3529,24 +3520,24 @@
         },
         {
             "name": "rvtraveller/qs-composer-installer",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rvtraveller/qs-composer-installer.git",
-                "reference": "20d6f4397e4b77599646767ad030092a60f5f92a"
+                "reference": "3d25d4a4348adc8b2276f9cb23eb53393d85c01e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rvtraveller/qs-composer-installer/zipball/20d6f4397e4b77599646767ad030092a60f5f92a",
-                "reference": "20d6f4397e4b77599646767ad030092a60f5f92a",
+                "url": "https://api.github.com/repos/rvtraveller/qs-composer-installer/zipball/3d25d4a4348adc8b2276f9cb23eb53393d85c01e",
+                "reference": "3d25d4a4348adc8b2276f9cb23eb53393d85c01e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "~1.0",
-                "composer/installers": "~1.0"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "composer/installers": "^1.9"
             },
             "require-dev": {
-                "composer/composer": "~1.0@dev"
+                "composer/composer": "1.0.* || 2.0.*@dev"
             },
             "type": "composer-plugin",
             "extra": {
@@ -3563,7 +3554,7 @@
             ],
             "description": "Install Quicksilver modules for Pantheon into custom locations.",
             "homepage": "https://github.com/rvtraveller/qs-composer-installer",
-            "time": "2017-01-27T20:40:31+00:00"
+            "time": "2021-01-04T22:27:18+00:00"
         },
         {
             "name": "stack/builder",
@@ -5962,12 +5953,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -6050,6 +6041,7 @@
                 }
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
+            "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
@@ -6179,23 +6171,24 @@
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.6.2",
+            "version": "v4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31"
+                "reference": "d5ae4616aeaa91daadbfb8446d9d17aae8d43cf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/51ac4500c4dc30cbaaabcd2f25694299df666a31",
-                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/d5ae4616aeaa91daadbfb8446d9d17aae8d43cf7",
+                "reference": "d5ae4616aeaa91daadbfb8446d9d17aae8d43cf7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.1"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.5|~5",
+                "cucumber/cucumber": "dev-gherkin-16.0.0",
+                "phpunit/phpunit": "^5.7.1|~6|~7",
                 "symfony/phpunit-bridge": "~2.7|~3|~4",
                 "symfony/yaml": "~2.3|~3|~4"
             },
@@ -6224,7 +6217,7 @@
                     "homepage": "http://everzet.com"
                 }
             ],
-            "description": "Gherkin DSL parser for PHP 5.3",
+            "description": "Gherkin DSL parser for PHP",
             "homepage": "http://behat.org/",
             "keywords": [
                 "BDD",
@@ -6234,30 +6227,31 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2020-03-17T14:03:26+00:00"
+            "time": "2021-02-04T12:26:47+00:00"
         },
         {
             "name": "behat/mink",
-            "version": "v1.8.1",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "07c6a9fe3fa98c2de074b25d9ed26c22904e3887"
+                "reference": "e35f4695de8800fc776af34ebf665ad58ebdd996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/07c6a9fe3fa98c2de074b25d9ed26c22904e3887",
-                "reference": "07c6a9fe3fa98c2de074b25d9ed26c22904e3887",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/e35f4695de8800fc776af34ebf665ad58ebdd996",
+                "reference": "e35f4695de8800fc776af34ebf665ad58ebdd996",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.1",
+                "php": ">=5.4",
                 "symfony/css-selector": "^2.7|^3.0|^4.0|^5.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20",
-                "symfony/debug": "^2.7|^3.0|^4.0",
-                "symfony/phpunit-bridge": "^3.4.38 || ^5.0.5"
+                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5 || ^9.5",
+                "symfony/debug": "^2.7|^3.0|^4.0|^5.0",
+                "symfony/phpunit-bridge": "^3.4.38 || ^4.4 || ^5.0.5",
+                "yoast/phpunit-polyfills": "^1.0"
             },
             "suggest": {
                 "behat/mink-browserkit-driver": "extremely fast headless driver for Symfony\\Kernel-based apps (Sf2, Silex)",
@@ -6269,7 +6263,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -6289,43 +6283,45 @@
                 }
             ],
             "description": "Browser controller/emulator abstraction for PHP",
-            "homepage": "http://mink.behat.org/",
+            "homepage": "https://mink.behat.org/",
             "keywords": [
                 "browser",
                 "testing",
                 "web"
             ],
-            "time": "2020-03-11T15:45:53+00:00"
+            "time": "2021-10-11T11:58:47+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
-            "version": "v1.3.4",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkBrowserKitDriver.git",
-                "reference": "e3b90840022ebcd544c7b394a3c9597ae242cbee"
+                "reference": "0ed1919eb09968f2e152ed91aee35300e70602a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/e3b90840022ebcd544c7b394a3c9597ae242cbee",
-                "reference": "e3b90840022ebcd544c7b394a3c9597ae242cbee",
+                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/0ed1919eb09968f2e152ed91aee35300e70602a8",
+                "reference": "0ed1919eb09968f2e152ed91aee35300e70602a8",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "^1.7.1@dev",
-                "php": ">=5.3.6",
+                "php": ">=5.4",
                 "symfony/browser-kit": "~2.3|~3.0|~4.0",
                 "symfony/dom-crawler": "~2.3|~3.0|~4.0"
             },
             "require-dev": {
                 "mink/driver-testsuite": "dev-master",
+                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.18 || ^8.5 || ^9.5",
                 "symfony/debug": "^2.7|^3.0|^4.0",
-                "symfony/http-kernel": "~2.3|~3.0|~4.0"
+                "symfony/http-kernel": "~2.3|~3.0|~4.0",
+                "yoast/phpunit-polyfills": "^1.0"
             },
             "type": "mink-driver",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -6345,14 +6341,14 @@
                 }
             ],
             "description": "Symfony2 BrowserKit driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
+            "homepage": "https://mink.behat.org/",
             "keywords": [
                 "Mink",
                 "Symfony2",
                 "browser",
                 "testing"
             ],
-            "time": "2020-03-11T09:49:45+00:00"
+            "time": "2021-10-12T09:42:37+00:00"
         },
         {
             "name": "behat/mink-extension",
@@ -6415,31 +6411,30 @@
         },
         {
             "name": "behat/mink-goutte-driver",
-            "version": "v1.2.1",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkGoutteDriver.git",
-                "reference": "8b9ad6d2d95bc70b840d15323365f52fcdaea6ca"
+                "reference": "8139f520f417c81bf9d2f9a171fff400f6adc9ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkGoutteDriver/zipball/8b9ad6d2d95bc70b840d15323365f52fcdaea6ca",
-                "reference": "8b9ad6d2d95bc70b840d15323365f52fcdaea6ca",
+                "url": "https://api.github.com/repos/minkphp/MinkGoutteDriver/zipball/8139f520f417c81bf9d2f9a171fff400f6adc9ea",
+                "reference": "8139f520f417c81bf9d2f9a171fff400f6adc9ea",
                 "shasum": ""
             },
             "require": {
-                "behat/mink": "~1.6@dev",
                 "behat/mink-browserkit-driver": "~1.2@dev",
                 "fabpot/goutte": "~1.0.4|~2.0|~3.1",
-                "php": ">=5.3.1"
+                "php": ">=5.4"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0"
+                "mink/driver-testsuite": "dev-master"
             },
             "type": "mink-driver",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -6459,27 +6454,27 @@
                 }
             ],
             "description": "Goutte driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
+            "homepage": "https://mink.behat.org/",
             "keywords": [
                 "browser",
                 "goutte",
                 "headless",
                 "testing"
             ],
-            "time": "2016-03-05T09:04:22+00:00"
+            "time": "2021-10-12T11:35:46+00:00"
         },
         {
             "name": "behat/mink-selenium2-driver",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "312a967dd527f28980cce40850339cd5316da092"
+                "reference": "0dee8cceed7e198bf130b4af0fab0ffab6dab47f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/312a967dd527f28980cce40850339cd5316da092",
-                "reference": "312a967dd527f28980cce40850339cd5316da092",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/0dee8cceed7e198bf130b4af0fab0ffab6dab47f",
+                "reference": "0dee8cceed7e198bf130b4af0fab0ffab6dab47f",
                 "shasum": ""
             },
             "require": {
@@ -6493,7 +6488,7 @@
             "type": "mink-driver",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -6518,7 +6513,7 @@
                 }
             ],
             "description": "Selenium2 (WebDriver) driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
+            "homepage": "https://mink.behat.org/",
             "keywords": [
                 "ajax",
                 "browser",
@@ -6527,7 +6522,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2020-03-11T14:43:21+00:00"
+            "time": "2021-10-12T16:01:47+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -6690,27 +6685,29 @@
         },
         {
             "name": "dmore/chrome-mink-driver",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/DMore/chrome-mink-driver.git",
-                "reference": "d66765fb7f448e8b2bca2b899308a4a6d8a69264"
+                "reference": "f85c8f86ca2e9000119c310577a6942683f7e280"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/DMore%2Fchrome-mink-driver/repository/archive.zip?sha=d66765fb7f448e8b2bca2b899308a4a6d8a69264",
-                "reference": "d66765fb7f448e8b2bca2b899308a4a6d8a69264",
+                "url": "https://gitlab.com/api/v4/projects/DMore%2Fchrome-mink-driver/repository/archive.zip?sha=f85c8f86ca2e9000119c310577a6942683f7e280",
+                "reference": "f85c8f86ca2e9000119c310577a6942683f7e280",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "^1.7",
                 "ext-curl": "*",
                 "ext-json": "*",
+                "ext-mbstring": "*",
                 "textalk/websocket": "^1.2.0"
             },
             "require-dev": {
                 "mink/driver-testsuite": "dev-master",
-                "phpunit/phpunit": "^5.0.0"
+                "phpunit/phpunit": "^5.0.0",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
@@ -6734,7 +6731,7 @@
                 }
             ],
             "description": "Mink driver for controlling chrome without selenium",
-            "time": "2019-03-30T09:22:58+00:00"
+            "time": "2021-04-25T06:49:32+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -6792,21 +6789,21 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.11",
+            "version": "8.3.13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "67c1bcf2d6860237ce4b176fd55ef4c7c014d84e"
+                "reference": "d3286d571b19633cc296d438c36b9aed195de43c"
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=7.0.8",
-                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
                 "squizlabs/php_codesniffer": "^3.5.6",
                 "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.51",
+                "phpstan/phpstan": "^0.12.63",
                 "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "type": "phpcodesniffer-standard",
@@ -6827,7 +6824,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-11-04T14:55:07+00:00"
+            "time": "2021-02-06T10:44:32+00:00"
         },
         {
             "name": "drupal/drupal-extension",
@@ -7014,16 +7011,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.7",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "b5f330e900e9b3edfc18024a5ec8c07136075712"
+                "reference": "6bc1f44cf23031e68c326cd61e14ec32486f241b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/b5f330e900e9b3edfc18024a5ec8c07136075712",
-                "reference": "b5f330e900e9b3edfc18024a5ec8c07136075712",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/6bc1f44cf23031e68c326cd61e14ec32486f241b",
+                "reference": "6bc1f44cf23031e68c326cd61e14ec32486f241b",
                 "shasum": ""
             },
             "require": {
@@ -7069,7 +7066,7 @@
                 "webdriver",
                 "webtest"
             ],
-            "time": "2019-09-25T09:05:11+00:00"
+            "time": "2021-10-14T03:25:34+00:00"
         },
         {
             "name": "jcalderonzumba/gastonjs",
@@ -7188,16 +7185,16 @@
         },
         {
             "name": "mikey179/vfsstream",
-            "version": "v1.6.8",
+            "version": "v1.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bovigo/vfsStream.git",
-                "reference": "231c73783ebb7dd9ec77916c10037eff5a2b6efe"
+                "reference": "250c0825537d501e327df879fb3d4cd751933b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/231c73783ebb7dd9ec77916c10037eff5a2b6efe",
-                "reference": "231c73783ebb7dd9ec77916c10037eff5a2b6efe",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/250c0825537d501e327df879fb3d4cd751933b85",
+                "reference": "250c0825537d501e327df879fb3d4cd751933b85",
                 "shasum": ""
             },
             "require": {
@@ -7230,7 +7227,7 @@
             ],
             "description": "Virtual file system to mock the real file system in unit tests.",
             "homepage": "http://vfs.bovigo.org/",
-            "time": "2019-10-30T15:31:00+00:00"
+            "time": "2021-09-25T08:05:01+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -8198,16 +8195,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.10.0",
+            "version": "v2.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "50486555fae72a6401ad0337d0b71fd9e775b2f2"
+                "reference": "3fad28475bfbdbf8aa5c440f8a8f89824983d85e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/50486555fae72a6401ad0337d0b71fd9e775b2f2",
-                "reference": "50486555fae72a6401ad0337d0b71fd9e775b2f2",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/3fad28475bfbdbf8aa5c440f8a8f89824983d85e",
+                "reference": "3fad28475bfbdbf8aa5c440f8a8f89824983d85e",
                 "shasum": ""
             },
             "require": {
@@ -8242,20 +8239,20 @@
                 }
             ],
             "description": "A PHPCS sniff to detect problems with variables.",
-            "time": "2020-11-23T17:43:05+00:00"
+            "time": "2021-07-06T23:45:17+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.5.8",
+            "version": "3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4"
+                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9d583721a7157ee997f235f327de038e7ea6dac4",
-                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f268ca40d54617c6e06757f83f699775c9b3ff2e",
+                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e",
                 "shasum": ""
             },
             "require": {
@@ -8293,7 +8290,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-10-23T02:01:07+00:00"
+            "time": "2021-10-11T04:00:11+00:00"
         },
         {
             "name": "symfony/browser-kit",
